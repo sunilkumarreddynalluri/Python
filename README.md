@@ -324,6 +324,73 @@ print(sum(lst))
 
 <hr>
 
+<h1>Python Control Flow & Loop Concepts</h1>
+
+<hr>
+
+<h2>Loop</h2>
+<p>
+A <b>loop</b> is used to execute a block of code repeatedly until a condition is satisfied.
+</p>
+
+<hr>
+
+<h2>for Loop</h2>
+<p>
+A <b>for loop</b> is used to iterate over a sequence such as a list, string, or range.
+</p>
+
+<hr>
+
+<h2>while Loop</h2>
+<p>
+A <b>while loop</b> executes a block of code as long as a given condition is true.
+</p>
+
+<hr>
+
+<h2>if Statement</h2>
+<p>
+An <b>if statement</b> executes a block of code only when a condition is true.
+</p>
+
+<hr>
+
+<h2>else Statement</h2>
+<p>
+An <b>else statement</b> executes a block of code when the if condition is false.
+</p>
+
+<hr>
+
+<h2>elif Statement</h2>
+<p>
+An <b>elif statement</b> is used to check multiple conditions after an if statement.
+</p>
+
+<hr>
+
+<h2>break Statement</h2>
+<p>
+The <b>break</b> statement is used to terminate a loop immediately.
+</p>
+
+<hr>
+
+<h2>continue Statement</h2>
+<p>
+The <b>continue</b> statement skips the current iteration of a loop and moves to the next iteration.
+</p>
+
+<hr>
+
+<h2>pass Statement</h2>
+<p>
+The <b>pass</b> statement is a null operation used when a statement is syntactically required but no action is needed.
+</p>
+
+<hr>
+
 <h1>Python Loops – for & while 
 
 <hr>
