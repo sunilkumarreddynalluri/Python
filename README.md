@@ -177,4 +177,157 @@ x = None
 
 <hr>
 
+<h1>Python List – Complete Guide</h1>
 
+<h2>📌 Learning Outcomes</h2>
+<ul>
+  <li>Understand what a List is in Python</li>
+  <li>Know list characteristics clearly</li>
+  <li>Perform common list operations</li>
+  <li>Use lists in real Python programs</li>
+</ul>
+
+<hr>
+
+<h2>1️⃣ What is a List?</h2>
+<p>
+A <b>list</b> is a collection of items stored in a single variable.
+</p>
+
+<p><b>Definition:</b> A list is a <b>mutable</b>, <b>ordered</b> collection that can store multiple data types.</p>
+
+<pre>
+my_list = [10, 20, 30]
+</pre>
+
+<hr>
+
+<h2>2️⃣ Characteristics of List</h2>
+<ul>
+  <li>Mutable (values can be changed)</li>
+  <li>Ordered</li>
+  <li>Indexed</li>
+  <li>Allows duplicate values</li>
+  <li>Stores different data types</li>
+</ul>
+
+<hr>
+
+<h2>3️⃣ Creating a List</h2>
+
+<pre>
+numbers = [1, 2, 3, 4]
+data = ["Python", 10, 2.5, True]
+empty_list = []
+</pre>
+
+<hr>
+
+<h2>4️⃣ Accessing List Elements</h2>
+
+<pre>
+lst = [10, 20, 30, 40]
+print(lst[0])
+print(lst[-1])
+</pre>
+
+<hr>
+
+<h2>5️⃣ Modifying List Elements</h2>
+
+<pre>
+lst = [10, 20, 30]
+lst[1] = 25
+print(lst)
+</pre>
+
+<hr>
+
+<h2>6️⃣ List Methods</h2>
+
+<h3>🔹 append()</h3>
+<pre>
+lst = [1, 2]
+lst.append(3)
+</pre>
+
+<h3>🔹 insert()</h3>
+<pre>
+lst = [1, 3]
+lst.insert(1, 2)
+</pre>
+
+<h3>🔹 remove()</h3>
+<pre>
+lst = [1, 2, 3]
+lst.remove(2)
+</pre>
+
+<h3>🔹 pop()</h3>
+<pre>
+lst = [1, 2, 3]
+lst.pop()
+</pre>
+
+<hr>
+
+<h2>7️⃣ List Slicing</h2>
+
+<pre>
+lst = [10, 20, 30, 40, 50]
+print(lst[1:4])
+print(lst[:3])
+print(lst[::2])
+</pre>
+
+<hr>
+
+<h2>8️⃣ Looping Through a List</h2>
+
+<pre>
+lst = [10, 20, 30]
+for x in lst:
+    print(x)
+</pre>
+
+<hr>
+
+<h2>9️⃣ Common List Functions</h2>
+
+<pre>
+lst = [5, 2, 9, 1]
+
+print(len(lst))
+print(max(lst))
+print(min(lst))
+print(sum(lst))
+</pre>
+
+<hr>
+
+<h2>🔟 List vs Tuple</h2>
+
+<table border="1" cellpadding="5">
+  <tr>
+    <th>Feature</th>
+    <th>List</th>
+    <th>Tuple</th>
+  </tr>
+  <tr>
+    <td>Mutable</td>
+    <td>Yes</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>Brackets</td>
+    <td>[ ]</td>
+    <td>( )</td>
+  </tr>
+  <tr>
+    <td>Performance</td>
+    <td>Slower</td>
+    <td>Faster</td>
+  </tr>
+</table>
+
+<hr>
