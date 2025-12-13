@@ -1,15 +1,5 @@
 # Python
-<h1>Python Data Types – Complete Guide</h1>
-
-<h2>📌 Learning Outcomes</h2>
-<ul>
-  <li>Understand Python data types</li>
-  <li>Identify mutable and immutable data types</li>
-  <li>Work confidently with Strings and Lists</li>
-  <li>Apply concepts using clear examples</li>
-  <li>Build a strong Python foundation</li>
-</ul>
-
+<h1>Python Data Types 
 <hr>
 
 <h2>1️⃣ Python Data Types</h2>
@@ -187,13 +177,4 @@ x = None
 
 <hr>
 
-<h2>✅ Summary</h2>
-<ul>
-  <li>Python supports multiple data types</li>
-  <li>Strings are immutable</li>
-  <li>Lists are mutable</li>
-  <li>Data types are the foundation of Python</li>
-</ul>
-
-<p><b>✔️ This HTML content is ready to paste directly into GitHub README.</b></p>
 
