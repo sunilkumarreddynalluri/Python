@@ -323,3 +323,210 @@ print(sum(lst))
 </table>
 
 <hr>
+
+<h1>Python Loops – for & while 
+
+<hr>
+
+<h2>1️⃣ What is a Loop?</h2>
+<p>
+A <b>loop</b> is used to execute a block of code repeatedly until a condition is satisfied.
+</p>
+
+<hr>
+
+<h2>2️⃣ Types of Loops in Python</h2>
+<ul>
+  <li>for loop</li>
+  <li>while loop</li>
+</ul>
+
+<hr>
+
+<h2>3️⃣ for Loop</h2>
+<p>
+A <b>for loop</b> is used to iterate over a sequence like range, list, string.
+</p>
+
+<pre>
+for i in range(5):
+    print(i)
+</pre>
+
+<hr>
+
+<h2>4️⃣ Perfect Number Program</h2>
+<p>
+A <b>perfect number</b> is a number whose sum of factors (excluding itself) is equal to the number.
+</p>
+
+<pre>
+a = 9
+b = 0
+for i in range(1, a):
+    if a % i == 0:
+        b = b + i
+
+if b == a:
+    print("given number is perfect")
+else:
+    print("given number is not perfect number")
+</pre>
+
+<hr>
+
+<h2>5️⃣ Reverse a Number (for loop)</h2>
+
+<pre>
+a = str(1234)
+b = ""
+for i in a:
+    b = i + b
+print(b)
+</pre>
+
+<hr>
+
+<h2>6️⃣ Reverse a Number (while loop)</h2>
+
+<pre>
+a = 1234
+b = 0
+while a > 0:
+    c = a % 10
+    b = (b * 10) + c
+    a = a // 10
+print(b)
+</pre>
+
+<hr>
+
+<h2>7️⃣ Sum of Digits using while loop</h2>
+
+<pre>
+a = 1234
+c = 0
+while a > 0:
+    d = a % 10
+    c = c + d
+    a = a // 10
+print(c)
+</pre>
+
+<hr>
+
+<h2>8️⃣ Prime Number Check</h2>
+
+<pre>
+a = 4
+c = 0
+for i in range(1, a + 1):
+    if a % i == 0:
+        c = c + 1
+
+if c == 2:
+    print("it is a prime")
+else:
+    print("it is not a prime")
+</pre>
+
+<hr>
+
+<h2>9️⃣ Prime Numbers from 1 to 100</h2>
+
+<pre>
+for i in range(2, 100):
+    c = 0
+    for j in range(1, i + 1):
+        if i % j == 0:
+            c = c + 1
+    if c == 2:
+        print(i, end=" ")
+</pre>
+
+<hr>
+
+<h2>🔟 Pattern Printing using Nested Loops</h2>
+
+<h3>Star Pattern</h3>
+<pre>
+for i in range(1, 6):
+    print("*" * i)
+</pre>
+
+<h3>Number Pattern</h3>
+<pre>
+for i in range(1, 6):
+    for j in range(1, i + 1):
+        print(j, end="")
+    print()
+</pre>
+
+<hr>
+
+<h2>1️⃣1️⃣ Table Program (for loop)</h2>
+
+<pre>
+n = 5
+for i in range(1, 11):
+    print(f"{n} x {i} = {n*i}")
+</pre>
+
+<hr>
+
+<h2>1️⃣2️⃣ Table Program (while loop)</h2>
+
+<pre>
+n = 1
+while n < 11:
+    print(f"5 x {n} = {5*n}")
+    n = n + 1
+</pre>
+
+<hr>
+
+<h2>1️⃣3️⃣ Extract Odd Numbers from Nested List</h2>
+
+<pre>
+L = [[12, 34, 25], [1, 45, 0]]
+a = []
+
+for i in L:
+    for j in i:
+        if j % 2 != 0:
+            a.append(j)
+
+print(a)
+</pre>
+
+<hr>
+
+<h2>1️⃣4️⃣ Current and Previous Number Sum</h2>
+
+<pre>
+pn = 0
+for i in range(10):
+    s = i + pn
+    print(f"current number:{i} previous number:{pn} sum:{s}")
+    pn = i
+</pre>
+
+<hr>
+
+<h2>1️⃣5️⃣ Merge Two Dictionaries using Loop</h2>
+
+<pre>
+d1 = {"a": 1, "b": 2}
+d2 = {"b": 3, "c": 4}
+d = {}
+
+for k in d1:
+    d[k] = d1[k]
+
+for k in d2:
+    d[k] = d2[k]
+
+print(d)
+</pre>
+
+<hr>
