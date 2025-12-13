@@ -177,15 +177,7 @@ x = None
 
 <hr>
 
-<h1>Python List – Complete Guide</h1>
-
-<h2>📌 Learning Outcomes</h2>
-<ul>
-  <li>Understand what a List is in Python</li>
-  <li>Know list characteristics clearly</li>
-  <li>Perform common list operations</li>
-  <li>Use lists in real Python programs</li>
-</ul>
+<h1>Python List 
 
 <hr>
 
