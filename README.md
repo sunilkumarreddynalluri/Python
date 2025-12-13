@@ -1,146 +1,199 @@
 # Python
-# Python Basics – Definitions with Examples
+<h1>Python Data Types – Complete Guide</h1>
 
-## 1. Data Types
+<h2>📌 Learning Outcomes</h2>
+<ul>
+  <li>Understand Python data types</li>
+  <li>Identify mutable and immutable data types</li>
+  <li>Work confidently with Strings and Lists</li>
+  <li>Apply concepts using clear examples</li>
+  <li>Build a strong Python foundation</li>
+</ul>
 
-**Definition:** Data types define the type of data a variable can store.
+<hr>
 
-### int
+<h2>1️⃣ Python Data Types</h2>
+<p>A <b>data type</b> defines the type of value a variable can store.</p>
 
-**Definition:** Stores whole numbers.
+<ul>
+  <li>Numeric</li>
+  <li>Boolean</li>
+  <li>Sequence</li>
+  <li>Set</li>
+  <li>Dictionary</li>
+  <li>NoneType</li>
+</ul>
 
-python
-x = 10
+<hr>
 
-### float
+<h2>2️⃣ Numeric Data Types</h2>
 
-**Definition:** Stores decimal numbers.
+<h3>🔹 int (Integer)</h3>
+<p>Stores whole numbers.</p>
+<pre>
+a = 10
+b = -5
+</pre>
 
-python
-y = 3.14
+<h3>🔹 float</h3>
+<p>Stores decimal numbers.</p>
+<pre>
+x = 3.14
+y = -2.5
+</pre>
 
-### complex
+<h3>🔹 complex</h3>
+<p>Stores real and imaginary values.</p>
+<pre>
+c = 2 + 3j
+</pre>
 
-**Definition:** Stores numbers with real and imaginary parts.
-python
-z = 2 + 3j
+<hr>
 
+<h2>3️⃣ Boolean Data Type</h2>
+<p>Used for logical operations.</p>
+<pre>
+is_active = True
+is_done = False
+</pre>
 
-### bool
+<hr>
 
-**Definition:** Stores True or False values.
+<h2>4️⃣ Sequence Data Types</h2>
 
-python
-flag = True
-
-
-### str
-
-**Definition:** Stores a sequence of characters.
-
-python
+<h3>🔹 String</h3>
+<p>A collection of characters enclosed in quotes.</p>
+<pre>
 name = "Python"
+</pre>
 
+<h3>🔹 List</h3>
+<p>A collection of items enclosed in square brackets.</p>
+<pre>
+numbers = [1, 2, 3, 4]
+</pre>
 
-### list
+<h3>🔹 Tuple</h3>
+<p>Similar to a list but immutable.</p>
+<pre>
+data = (10, 20, 30)
+</pre>
 
-**Definition:** Stores multiple values in ordered form.
+<hr>
 
-python
-lst = [1, 2, 3]
+<h2>5️⃣ String (Detailed Concept)</h2>
 
+<p><b>Definition:</b> A string is an immutable sequence of characters.</p>
 
-### tuple
+<ul>
+  <li>Immutable</li>
+  <li>Indexed</li>
+  <li>Stored in quotes</li>
+</ul>
 
-**Definition:** Stores multiple values that cannot be changed.
+<pre>
+text = "Hello"
+print(text[0])
+</pre>
 
-python
-t = (1, 2, 3)
-
-
-### set
-
-**Definition:** Stores unique values.
-
-python
-s = {1, 2, 3}
-
-
-### dict
-
-**Definition:** Stores data in key-value pairs.
-
-python
-d = {"a": 1, "b": 2}
-
-
-
-
-## 2. Strings
-
-**Definition:** A string is a collection of characters enclosed in quotes.
-
-### String Creation
-
-python
-s = "hello"
-
-
-### Indexing
-
-python
-print(s[0])   # h
-
-
-### Slicing
-
-python
-print(s[1:4]) # ell
-
-
-### String Length
-
-python
+<h3>String Operations</h3>
+<pre>
+s = "Python"
 print(len(s))
-
-
-### Reverse String
-
-python
+print(s.upper())
+print(s.lower())
 print(s[::-1])
+</pre>
 
+<hr>
 
+<h2>6️⃣ List (Detailed Concept)</h2>
 
-## 3. Lists
+<p><b>Definition:</b> A list is a mutable collection that can store different data types.</p>
 
-**Definition:** A list is a collection of elements stored in a single variable.
+<ul>
+  <li>Mutable</li>
+  <li>Indexed</li>
+  <li>Allows duplicate values</li>
+</ul>
 
-### List Creation
+<pre>
+my_list = [1, "Python", 3.5, True]
+</pre>
 
-python
+<h3>List Operations</h3>
+<pre>
 lst = [10, 20, 30]
-
-
-### Access Elements
-
-python
-print(lst[1])
-
-
-### Add Element
-
-python
 lst.append(40)
-
-
-### Remove Element
-
-python
+lst.insert(1, 15)
 lst.remove(20)
+lst.pop()
+</pre>
 
+<hr>
 
-### Length of List
+<h2>7️⃣ String vs List</h2>
 
-python
-print(len(lst))
+<table border="1" cellpadding="5">
+  <tr>
+    <th>Feature</th>
+    <th>String</th>
+    <th>List</th>
+  </tr>
+  <tr>
+    <td>Mutable</td>
+    <td>No</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>Stores</td>
+    <td>Characters</td>
+    <td>Any Data Type</td>
+  </tr>
+  <tr>
+    <td>Brackets</td>
+    <td>Quotes</td>
+    <td>Square Brackets</td>
+  </tr>
+</table>
+
+<hr>
+
+<h2>8️⃣ Set Data Type</h2>
+<p>Stores unique values.</p>
+<pre>
+s = {1, 2, 3, 3}
+print(s)
+</pre>
+
+<hr>
+
+<h2>9️⃣ Dictionary Data Type</h2>
+<p>Stores data in key-value pairs.</p>
+<pre>
+student = {
+  "name": "Sunil",
+  "age": 22
+}
+</pre>
+
+<hr>
+
+<h2>🔟 None Data Type</h2>
+<p>Represents no value.</p>
+<pre>
+x = None
+</pre>
+
+<hr>
+
+<h2>✅ Summary</h2>
+<ul>
+  <li>Python supports multiple data types</li>
+  <li>Strings are immutable</li>
+  <li>Lists are mutable</li>
+  <li>Data types are the foundation of Python</li>
+</ul>
+
+<p><b>✔️ This HTML content is ready to paste directly into GitHub README.</b></p>
 
