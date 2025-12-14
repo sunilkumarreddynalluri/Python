@@ -597,3 +597,61 @@ print(d)
 </pre>
 
 <hr>
+
+<h1>Python Functions</h1>
+
+<h2>Definition</h2>
+<p>A function is a reusable block of code that performs a specific task.</p>
+
+<h2>Syntax</h2>
+<pre>
+def function_name(parameters):
+    statements
+    return value
+</pre>
+
+<h2>Example 1: Simple Function</h2>
+<pre>
+def greet():
+    print("Hello World")
+
+greet()
+</pre>
+
+<h2>Function with Parameters</h2>
+<p>A function that accepts input values.</p>
+<pre>
+def add(a, b):
+    return a + b
+
+print(add(5, 3))
+</pre>
+
+<h2>Function with Return Value</h2>
+<p>A function that sends a result back to the caller.</p>
+<pre>
+def square(n):
+    return n * n
+
+print(square(4))
+</pre>
+
+<h2>Default Arguments</h2>
+<p>Parameters with default values.</p>
+<pre>
+def greet(name="User"):
+    print("Hello", name)
+
+greet()
+greet("Sunil")
+</pre>
+
+<h2>Keyword Arguments</h2>
+<pre>
+def student(name, age):
+    print(name, age)
+
+student(age=20, name="Ravi")
+</pre>
+
+<h2>
