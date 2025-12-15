@@ -655,3 +655,90 @@ student(age=20, name="Ravi")
 </pre>
 
 <h2>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python Modularization & Functional Programming</title>
+</head>
+<body>
+
+<h1>Python Modularization Using Functions</h1>
+
+<h2>1. Function (Modularization)</h2>
+<p><b>Definition:</b> A function is a reusable block of code that performs a specific task.</p>
+<pre>
+def add(a, b):
+    return a + b
+</pre>
+
+<h2>2. Single * ( *args )</h2>
+<p><b>Definition:</b> <code>*args</code> allows a function to accept multiple arguments as a tuple.</p>
+<pre>
+def show(*args):
+    return args
+
+show(1, 2, 3)
+</pre>
+
+<h2>3. Double ** ( **kwargs )</h2>
+<p><b>Definition:</b> <code>**kwargs</code> allows a function to accept multiple keyword arguments as a dictionary.</p>
+<pre>
+def show_kw(**kwargs):
+    return kwargs
+
+show_kw(a=10, b=20)
+</pre>
+
+<h2>4. Lambda Function</h2>
+<p><b>Definition:</b> A lambda function is a small anonymous function written in one line.</p>
+<pre>
+square = lambda x: x * x
+square(5)
+</pre>
+
+<h2>5. map()</h2>
+<p><b>Definition:</b> <code>map()</code> applies a function to each element of an iterable.</p>
+<pre>
+nums = [1, 2, 3, 4]
+result = list(map(lambda x: x * 2, nums))
+</pre>
+
+<h2>6. filter()</h2>
+<p><b>Definition:</b> <code>filter()</code> selects elements from an iterable based on a condition.</p>
+<pre>
+nums = [1, 2, 3, 4]
+result = list(filter(lambda x: x % 2 == 0, nums))
+</pre>
+
+<h2>7. reduce()</h2>
+<p><b>Definition:</b> <code>reduce()</code> reduces an iterable to a single value by applying a function repeatedly.</p>
+<pre>
+from functools import reduce
+nums = [1, 2, 3, 4]
+result = reduce(lambda a, b: a + b, nums)
+</pre>
+
+<h2>8. map() with filter()</h2>
+<p><b>Definition:</b> First filters elements, then applies a function using <code>map()</code>.</p>
+<pre>
+nums = [1, 2, 3, 4]
+result = list(
+    map(lambda x: x * 2,
+        filter(lambda x: x % 2 == 0, nums))
+)
+</pre>
+
+<h2>9. filter() with map()</h2>
+<p><b>Definition:</b> First transforms elements using <code>map()</code>, then filters them.</p>
+<pre>
+nums = [1, 2, 3, 4]
+result = list(
+    filter(lambda x: x > 4,
+           map(lambda x: x * 2, nums))
+)
+</pre>
+
+<h2>10. reduce() with map() and filter()</h2>
+<p><b>Definition:</b> Combines <code>filter()</
