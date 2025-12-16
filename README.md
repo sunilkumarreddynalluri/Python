@@ -740,5 +740,38 @@ result = list(
 )
 </pre>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python Comprehensions – Definitions & Examples</title>
+</head>
+<body>
+
+<h1>Python Comprehensions</h1>
+
+<h2>1. List Comprehension</h2>
+<p><b>Definition:</b> List comprehension is a concise way to create a list using a single line of code.</p>
+<pre>
+numbers = [1, 2, 3, 4, 5]
+squares = [x * x for x in numbers]
+print(squares)
+</pre>
+
+<h2>2. List Comprehension with Condition</h2>
+<p><b>Definition:</b> A condition can be added to filter elements while creating a list.</p>
+<pre>
+numbers = [1, 2, 3, 4, 5, 6]
+even_numbers = [x for x in numbers if x % 2 == 0]
+print(even_numbers)
+</pre>
+
+<h2>3. Nested List Comprehension</h2>
+<p><b>Definition:</b> Nested list comprehension is used to work with nested loops in a single line.</p>
+<pre>
+matrix = [[1, 2], [3, 4], [5, 6]]
+flatten = [num for row in matrix for num in row]
+print(flatten)
+
 <h2>10. reduce() with map() and filter()</h2>
 <p><b>Definition:</b> Combines <code>filter()</
