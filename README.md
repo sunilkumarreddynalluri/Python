@@ -748,6 +748,14 @@ result = list(
 </head>
 <body>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python Comprehensions – Definitions & Examples</title>
+</head>
+<body>
+
 <h1>Python Comprehensions</h1>
 
 <h2>1. List Comprehension</h2>
@@ -772,6 +780,48 @@ print(even_numbers)
 matrix = [[1, 2], [3, 4], [5, 6]]
 flatten = [num for row in matrix for num in row]
 print(flatten)
+</pre>
 
-<h2>10. reduce() with map() and filter()</h2>
-<p><b>Definition:</b> Combines <code>filter()</
+<h2>4. Set Comprehension</h2>
+<p><b>Definition:</b> Set comprehension creates a set using comprehension syntax.</p>
+<pre>
+numbers = [1, 2, 2, 3, 4, 4]
+unique = {x for x in numbers}
+print(unique)
+</pre>
+
+<h2>5. Dictionary Comprehension</h2>
+<p><b>Definition:</b> Dictionary comprehension creates a dictionary using key-value pairs.</p>
+<pre>
+numbers = [1, 2, 3, 4]
+square_dict = {x: x * x for x in numbers}
+print(square_dict)
+</pre>
+
+<h2>6. Dictionary Comprehension with Condition</h2>
+<p><b>Definition:</b> Conditions can be applied while creating dictionaries.</p>
+<pre>
+numbers = [1, 2, 3, 4, 5]
+even_square = {x: x * x for x in numbers if x % 2 == 0}
+print(even_square)
+</pre>
+
+<h2>7. Generator Comprehension</h2>
+<p><b>Definition:</b> Generator comprehension returns an iterator instead of storing values in memory.</p>
+<pre>
+numbers = [1, 2, 3, 4]
+gen = (x * x for x in numbers)
+for value in gen:
+    print(value)
+</pre>
+
+<h2>8. Comprehension with if-else</h2>
+<p><b>Definition:</b> if-else can be used inside comprehension for conditional expressions.</p>
+<pre>
+numbers = [1, 2, 3, 4, 5]
+result = ["Even" if x % 2 == 0 else "Odd" for x in numbers]
+print(result)
+</pre>
+
+</body>
+</html>
