@@ -1,7 +1,7 @@
 # Python
 <h1>Python Data Types 
 <hr>
-
+  
 <h2>1️⃣ Python Data Types</h2>
 <p>A <b>data type</b> defines the type of value a variable can store.</p>
 
