@@ -825,3 +825,83 @@ print(result)
 
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File Handling in Python</title>
+</head>
+<body>
+
+<h1>File Handling in Python</h1>
+
+<h2>Definition</h2>
+<p>
+File handling is the process of creating, reading, writing, and managing files using Python programs.
+</p>
+
+<h2>Why File Handling?</h2>
+<p>
+File handling is used to store data permanently so it can be accessed later.
+</p>
+
+<h2>Types of Files</h2>
+
+<h3>1. Text Files</h3>
+<p>
+Text files store data in readable text format. Example: .txt
+</p>
+
+<h3>2. Binary Files</h3>
+<p>
+Binary files store data in binary format such as images, audio, and video files.
+</p>
+
+<h2>File Modes</h2>
+<ul>
+    <li><b>r</b> – Read mode</li>
+    <li><b>w</b> – Write mode</li>
+    <li><b>a</b> – Append mode</li>
+    <li><b>x</b> – Create mode</li>
+    <li><b>rb</b> – Read binary mode</li>
+    <li><b>wb</b> – Write binary mode</li>
+</ul>
+
+<h2>Opening a File</h2>
+<pre>
+file = open("sample.txt", "r")
+</pre>
+
+<h2>Reading a File</h2>
+<pre>
+file.read()
+</pre>
+
+<h2>Writing to a File</h2>
+<pre>
+file = open("sample.txt", "w")
+file.write("Hello Python")
+</pre>
+
+<h2>Appending to a File</h2>
+<pre>
+file = open("sample.txt", "a")
+file.write("Welcome")
+</pre>
+
+<h2>Closing a File</h2>
+<pre>
+file.close()
+</pre>
+
+<h2>Using with Statement</h2>
+<pre>
+with open("sample.txt", "r") as file:
+    data = file.read()
+    print(data)
+</pre>
+
+</body>
+</html>
+
