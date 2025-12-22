@@ -905,3 +905,152 @@ with open("sample.txt", "r") as file:
 </body>
 </html>
 
+<h1>Exception Handling in Python</h1>
+
+<p>
+Exception handling in Python is a mechanism used to handle runtime errors
+so that the normal flow of the program can be maintained.
+</p>
+
+<h2>What is an Exception?</h2>
+<p>
+An exception is an error that occurs during the execution of a program.
+When an exception occurs, Python stops normal execution and looks for
+exception-handling code.
+</p>
+
+<h3>Example</h3>
+<pre><code>
+a = 10
+b = 0
+print(a / b)
+</code></pre>
+
+<p>
+The above code raises a <b>ZeroDivisionError</b> because division by zero
+is not allowed.
+</p>
+
+<h2>try and except</h2>
+<p>
+The <b>try</b> block contains code that may cause an exception.
+The <b>except</b> block handles the exception if it occurs.
+</p>
+
+<h3>Syntax</h3>
+<pre><code>
+try:
+    # risky code
+except ExceptionType:
+    # handling code
+</code></pre>
+
+<h3>Example</h3>
+<pre><code>
+try:
+    x = int(input("Enter a number: "))
+    print(10 / x)
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+except ValueError:
+    print("Invalid input")
+</code></pre>
+
+<h2>Multiple except Blocks</h2>
+<p>
+Multiple <b>except</b> blocks are used to handle different types of exceptions
+separately.
+</p>
+
+<h3>Example</h3>
+<pre><code>
+try:
+    a = int(input("Enter a number: "))
+    b = int(input("Enter another number: "))
+    print(a / b)
+except ZeroDivisionError:
+    print("Division by zero error")
+except ValueError:
+    print("Please enter valid integers")
+</code></pre>
+
+<h2>else Block</h2>
+<p>
+The <b>else</b> block executes when no exception occurs in the try block.
+</p>
+
+<h3>Example</h3>
+<pre><code>
+try:
+    num = int(input("Enter a number: "))
+    print(10 / num)
+except ZeroDivisionError:
+    print("Division by zero")
+else:
+    print("Execution successful")
+</code></pre>
+
+<h2>finally Block</h2>
+<p>
+The <b>finally</b> block always executes, whether an exception occurs or not.
+It is commonly used for cleanup operations.
+</p>
+
+<h3>Example</h3>
+<pre><code>
+try:
+    f = open("data.txt", "r")
+    print(f.read())
+except FileNotFoundError:
+    print("File not found")
+finally:
+    print("File operation completed")
+</code></pre>
+
+<h2>Raising Exceptions</h2>
+<p>
+The <b>raise</b> keyword is used to trigger an exception manually.
+</p>
+
+<h3>Example</h3>
+<pre><code>
+age = -5
+if age &lt; 0:
+    raise ValueError("Age cannot be negative")
+</code></pre>
+
+<h2>Custom Exceptions</h2>
+<p>
+Custom exceptions are user-defined exception classes.
+They are created by inheriting from the <b>Exception</b> class.
+</p>
+
+<h3>Example</h3>
+<pre><code>
+class InvalidAgeError(Exception):
+    pass
+
+age = -2
+if age &lt; 0:
+    raise InvalidAgeError("Invalid age entered")
+</code></pre>
+
+<h2>Common Built-in Exceptions</h2>
+<ul>
+    <li>ZeroDivisionError</li>
+    <li>ValueError</li>
+    <li>TypeError</li>
+    <li>IndexError</li>
+    <li>KeyError</li>
+    <li>FileNotFoundError</li>
+</ul>
+
+<h2>Why Use Exception Handling?</h2>
+<ul>
+    <li>Prevents program crash</li>
+    <li>Improves program reliability</li>
+    <li>Separates error-handling code from normal logic</li>
+    <li>Makes debugging easier</li>
+</ul>
+
+
