@@ -1053,4 +1053,77 @@ if age &lt; 0:
     <li>Makes debugging easier</li>
 </ul>
 
+<h1>Object Oriented Programming System (OOPS) – Python</h1>
+
+<h2>What is OOPS?</h2>
+<p>Object Oriented Programming System (OOPS) is a programming approach based on objects. Objects contain data (variables) and behavior (methods).</p>
+
+<h2>Class</h2>
+<p>A class is a blueprint for creating objects. It defines properties and methods.</p>
+
+<pre><code>
+class Student:
+    def display(self):
+        print("Hello Student")
+</code></pre>
+
+<h2>Object</h2>
+<p>An object is an instance of a class. It represents a real-world entity.</p>
+
+<pre><code>
+s = Student()
+s.display()
+</code></pre>
+
+<h2>Encapsulation</h2>
+<p>Encapsulation is wrapping data and methods into a single unit called a class.</p>
+
+<pre><code>
+class Bank:
+    def __init__(self, balance):
+        self.balance = balance
+</code></pre>
+
+<h2>Inheritance</h2>
+<p>Inheritance allows one class to acquire properties and methods of another class.</p>
+
+<pre><code>
+class Parent:
+    def show(self):
+        print("Parent class")
+
+class Child(Parent):
+    pass
+
+c = Child()
+c.show()
+</code></pre>
+
+<h2>Polymorphism</h2>
+<p>Polymorphism allows the same method name to behave differently.</p>
+
+<pre><code>
+class A:
+    def add(self):
+        print("Class A")
+
+class B(A):
+    def add(self):
+        print("Class B")
+
+obj = B()
+obj.add()
+</code></pre>
+
+<h2>Abstraction</h2>
+<p>Abstraction hides internal details and shows only essential features.</p>
+
+<pre><code>
+from abc import ABC, abstractmethod
+
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+</code></pre>
 
