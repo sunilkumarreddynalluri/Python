@@ -1052,3 +1052,111 @@ if age &lt; 0:
     <li>Separates error-handling code from normal logic</li>
     <li>Makes debugging easier</li>
 </ul>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>OOPS Concepts</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+h1, h2, h3 {
+    color: #2c3e50;
+}
+pre {
+    background: #f4f4f4;
+    padding: 10px;
+    overflow-x: auto;
+}
+code {
+    color: #c7254e;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Object Oriented Programming (OOPS)</h1>
+
+<h2>Definition</h2>
+<p>
+Object-Oriented Programming (OOPS) is a programming paradigm based on the concept of
+<strong>objects</strong> which contain data and methods.
+</p>
+
+<h2>Class</h2>
+<p>
+A <strong>class</strong> is a blueprint for creating objects.
+</p>
+
+<pre><code>
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+</code></pre>
+
+<h2>Object</h2>
+<p>
+An <strong>object</strong> is an instance of a class.
+</p>
+
+<pre><code>
+s1 = Student("Sunil", 21)
+</code></pre>
+
+<h2>Encapsulation</h2>
+<p>
+Encapsulation is binding data and methods together into a single unit.
+</p>
+
+<pre><code>
+class Bank:
+    def __init__(self, balance):
+        self.__balance = balance
+</code></pre>
+
+<h2>Inheritance</h2>
+<p>
+Inheritance allows one class to acquire properties of another class.
+</p>
+
+<pre><code>
+class A:
+    def show(self):
+        print("Class A")
+
+class B(A):
+    pass
+</code></pre>
+
+<h2>Polymorphism</h2>
+<p>
+Polymorphism allows the same function name to behave differently.
+</p>
+
+<pre><code>
+print(len("Python"))
+print(len([1,2,3]))
+</code></pre>
+
+<h2>Abstraction</h2>
+<p>
+Abstraction hides implementation details and shows only functionality.
+</p>
+
+<pre><code>
+from abc import ABC, abstractmethod
+
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+</code></pre>
+
+</body>
+</html>
