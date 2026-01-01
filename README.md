@@ -1057,106 +1057,202 @@ if age &lt; 0:
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>OOPS Concepts</title>
+<title>Python OOPS – Complete Notes</title>
 <style>
-body {
+body{
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
+    line-height:1.7;
+    padding:20px;
 }
-h1, h2, h3 {
-    color: #2c3e50;
+h1,h2,h3{
+    color:#1f3a5f;
 }
-pre {
-    background: #f4f4f4;
-    padding: 10px;
-    overflow-x: auto;
+p{
+    margin:8px 0;
 }
-code {
-    color: #c7254e;
+pre{
+    background:#f4f4f4;
+    padding:12px;
+    border-left:4px solid #1f3a5f;
+    overflow-x:auto;
 }
 </style>
 </head>
 
 <body>
 
-<h1>Object Oriented Programming (OOPS)</h1>
+<h1>OBJECT ORIENTED PROGRAMMING SYSTEM (OOPS)</h1>
 
-<h2>Definition</h2>
+<h2>Introduction</h2>
 <p>
-Object-Oriented Programming (OOPS) is a programming paradigm based on the concept of
-<strong>objects</strong> which contain data and methods.
+Object Oriented Programming System (OOPS) is a programming paradigm based on the concept
+of objects. Objects represent real-world entities and contain data and methods.
 </p>
+
+<h2>Why OOPS?</h2>
+<p>
+OOPS is used to make programs reusable, secure, easy to maintain, and scalable.
+</p>
+
+<h2>Main Concepts of OOPS</h2>
+<ul>
+<li>Class</li>
+<li>Object</li>
+<li>Encapsulation</li>
+<li>Inheritance</li>
+<li>Polymorphism</li>
+<li>Abstraction</li>
+</ul>
 
 <h2>Class</h2>
 <p>
-A <strong>class</strong> is a blueprint for creating objects.
+A class is a blueprint or template used to create objects. It defines properties
+(variables) and behaviors (methods).
 </p>
 
-<pre><code>
+<pre>
 class Student:
-    def __init__(self, name, age):
+    def __init__(self, name, roll):
         self.name = name
-        self.age = age
-</code></pre>
+        self.roll = roll
+
+    def display(self):
+        print(self.name, self.roll)
+</pre>
 
 <h2>Object</h2>
 <p>
-An <strong>object</strong> is an instance of a class.
+An object is an instance of a class. It represents a real-world entity.
 </p>
 
-<pre><code>
-s1 = Student("Sunil", 21)
-</code></pre>
+<pre>
+s1 = Student("Sunil", 101)
+s1.display()
+</pre>
+
+<h2>Constructor</h2>
+<p>
+A constructor is a special method used to initialize objects.
+In Python, the constructor method name is <b>__init__</b>.
+</p>
+
+<pre>
+class Demo:
+    def __init__(self):
+        print("Constructor called")
+
+obj = Demo()
+</pre>
 
 <h2>Encapsulation</h2>
 <p>
-Encapsulation is binding data and methods together into a single unit.
+Encapsulation is the process of wrapping data and methods together into a single unit.
+It helps in data hiding and security.
 </p>
 
-<pre><code>
+<pre>
 class Bank:
     def __init__(self, balance):
         self.__balance = balance
-</code></pre>
+
+    def get_balance(self):
+        return self.__balance
+</pre>
 
 <h2>Inheritance</h2>
 <p>
-Inheritance allows one class to acquire properties of another class.
+Inheritance allows one class (child class) to acquire the properties and methods
+of another class (parent class).
 </p>
 
-<pre><code>
+<pre>
+class Parent:
+    def show(self):
+        print("Parent class method")
+
+class Child(Parent):
+    pass
+
+c = Child()
+c.show()
+</pre>
+
+<h2>Types of Inheritance</h2>
+<ul>
+<li>Single Inheritance</li>
+<li>Multiple Inheritance</li>
+<li>Multilevel Inheritance</li>
+<li>Hierarchical Inheritance</li>
+<li>Hybrid Inheritance</li>
+</ul>
+
+<h2>Polymorphism</h2>
+<p>
+Polymorphism means one name having multiple forms.
+Same function name behaves differently for different objects.
+</p>
+
+<pre>
+print(len("Python"))
+print(len([1, 2, 3, 4, 5]))
+</pre>
+
+<h2>Method Overriding</h2>
+<p>
+When a child class provides a specific implementation of a method already defined
+in the parent class, it is called method overriding.
+</p>
+
+<pre>
 class A:
     def show(self):
         print("Class A")
 
 class B(A):
-    pass
-</code></pre>
+    def show(self):
+        print("Class B")
 
-<h2>Polymorphism</h2>
-<p>
-Polymorphism allows the same function name to behave differently.
-</p>
-
-<pre><code>
-print(len("Python"))
-print(len([1,2,3]))
-</code></pre>
+obj = B()
+obj.show()
+</pre>
 
 <h2>Abstraction</h2>
 <p>
-Abstraction hides implementation details and shows only functionality.
+Abstraction hides internal implementation details and shows only necessary features.
 </p>
 
-<pre><code>
+<pre>
 from abc import ABC, abstractmethod
 
-class Shape(ABC):
+class Vehicle(ABC):
     @abstractmethod
-    def area(self):
+    def speed(self):
         pass
-</code></pre>
+
+class Bike(Vehicle):
+    def speed(self):
+        print("Bike speed is 60km/hr")
+
+b = Bike()
+b.speed()
+</pre>
+
+<h2>Advantages of OOPS</h2>
+<ul>
+<li>Code reusability</li>
+<li>Data security</li>
+<li>Easy maintenance</li>
+<li>Modular programming</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>
+OOPS makes programming more organized, reusable, and closer to real-world modeling.
+Python fully supports object-oriented programming concepts.
+</p>
 
 </body>
 </html>
+
+
+
