@@ -1254,5 +1254,158 @@ Python fully supports object-oriented programming concepts.
 </body>
 </html>
 
+<h1>Python Multiprocessing</h1>
+
+<hr>
+
+<h2>1. Process</h2>
+<p>
+<b>Definition:</b><br>
+A <b>process</b> is an independent program in execution.
+Each process has its own memory space and system resources.
+</p>
+
+<hr>
+
+<h2>2. Multiprocessing</h2>
+<p>
+<b>Definition:</b><br>
+<b>Multiprocessing</b> is a Python technique that allows multiple processes
+to run at the same time using different CPU cores.
+It improves performance for CPU-bound tasks.
+</p>
+
+<hr>
+
+<h2>3. join() Method</h2>
+<p>
+<b>Definition:</b><br>
+The <code>join()</code> method is used to make the main program
+wait until a process finishes its execution.
+</p>
+
+<hr>
+
+<h2>4. Example Program</h2>
+
+<pre>
+import multiprocessing
+import time
+import os
+
+def task():
+    print("Process ID:", os.getpid())
+    time.sleep(2)
+
+if __name__ == "__main__":
+    p1 = multiprocessing.Process(target=task)
+    p2 = multiprocessing.Process(target=task)
+
+    start_time = time.time()
+
+    p1.start()
+    p2.start()
+
+    p1.join()
+    p2.join()
+
+    print("Total Time:", time.time() - start_time)
+</pre>
+
+<hr>
+
+<h2>5. Output</h2>
+
+<pre>
+Process ID: 1234
+Process ID: 1235
+Total Time: 2.0 seconds
+</pre>
+
+<hr>
+
+<h2>6. Key Points</h2>
+<ul>
+  <li>Each process runs independently</li>
+  <li>Uses multiple CPU cores</li>
+  <li>join() ensures process completion</li>
+  <li>Best for CPU-intensive tasks</li>
+</ul>
+
+<h1>Python Multithreading</h1>
+
+<hr>
+
+<h2>1. Thread</h2>
+<p>
+<b>Definition:</b><br>
+A <b>thread</b> is a lightweight unit of execution that runs inside a process.
+Multiple threads share the same memory space.
+</p>
+
+<hr>
+
+<h2>2. Multithreading</h2>
+<p>
+<b>Definition:</b><br>
+<b>Multithreading</b> allows multiple threads to run concurrently within a
+single process. It is useful for I/O-bound tasks like file handling,
+network requests, and waiting operations.
+</p>
+
+<hr>
+
+<h2>3. join() Method</h2>
+<p>
+<b>Definition:</b><br>
+The <code>join()</code> method makes the main program wait until a thread
+finishes its execution.
+</p>
+
+<hr>
+
+<h2>4. Example Program</h2>
+
+<pre>
+import threading
+import time
+
+def task():
+    print("Thread running")
+    time.sleep(2)
+
+t1 = threading.Thread(target=task)
+t2 = threading.Thread(target=task)
+
+start_time = time.time()
+
+t1.start()
+t2.start()
+
+t1.join()
+t2.join()
+
+print("Total Time:", time.time() - start_time)
+</pre>
+
+<hr>
+
+<h2>5. Output</h2>
+
+<pre>
+Thread running
+Thread running
+Total Time: 2.0 seconds
+</pre>
+
+<hr>
+
+<h2>6. Key Points</h2>
+<ul>
+  <li>Threads share the same memory</li>
+  <li>Faster for I/O-bound tasks</li>
+  <li>Less memory usage than processes</li>
+  <li>join() waits for thread completion</li>
+</ul>
 
 
