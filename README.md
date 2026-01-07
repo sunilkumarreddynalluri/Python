@@ -1408,4 +1408,118 @@ Total Time: 2.0 seconds
   <li>join() waits for thread completion</li>
 </ul>
 
+<h1>NumPy – Complete Notes</h1>
+
+<h2>What is NumPy?</h2>
+<p>
+NumPy (Numerical Python) is a Python library used for numerical and scientific computing.
+It provides support for large multi-dimensional arrays and matrices along with
+a collection of mathematical functions.
+</p>
+
+<hr>
+
+<h2>Importing NumPy</h2>
+<pre><code>import numpy as np</code></pre>
+
+<hr>
+
+<h2>Creating NumPy Arrays</h2>
+
+<h3>1D Array</h3>
+<p>A one-dimensional array stores elements in a single row.</p>
+<pre><code>
+a = np.array([1, 2, 3, 4, 5])
+print(a)
+</code></pre>
+
+<h3>2D Array</h3>
+<p>A two-dimensional array represents rows and columns.</p>
+<pre><code>
+b = np.array([[1, 2, 3], [4, 5, 6]])
+print(b)
+</code></pre>
+
+<hr>
+
+<h2>Array Attributes</h2>
+
+<ul>
+  <li><b>ndim</b> – Returns number of dimensions</li>
+  <li><b>shape</b> – Returns rows and columns</li>
+  <li><b>size</b> – Returns total number of elements</li>
+  <li><b>dtype</b> – Returns data type of elements</li>
+</ul>
+
+<pre><code>
+print(a.ndim)
+print(a.shape)
+print(a.size)
+print(a.dtype)
+</code></pre>
+
+<hr>
+
+<h2>Special NumPy Functions</h2>
+
+<h3>zeros()</h3>
+<p>Creates an array filled with zeros.</p>
+<pre><code>np.zeros(5)</code></pre>
+
+<h3>ones()</h3>
+<p>Creates an array filled with ones.</p>
+<pre><code>np.ones(5)</code></pre>
+
+<h3>arange()</h3>
+<p>Creates array with a sequence of values.</p>
+<pre><code>np.arange(1, 10, 2)</code></pre>
+
+<h3>reshape()</h3>
+<p>Changes the shape of an array without changing data.</p>
+<pre><code>
+a = np.array([1, 2, 3, 4, 5, 6])
+a.reshape(2, 3)
+</code></pre>
+
+<hr>
+
+<h2>Mathematical Operations</h2>
+<p>NumPy supports element-wise arithmetic operations.</p>
+
+<pre><code>
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+
+print(a + b)
+print(a - b)
+print(a * b)
+print(a / b)
+</code></pre>
+
+<hr>
+
+<h2>Why NumPy is Fast?</h2>
+<ul>
+  <li>Uses C language internally</li>
+  <li>Consumes less memory</li>
+  <li>Faster execution than Python lists</li>
+</ul>
+
+<hr>
+
+<h2>Applications of NumPy</h2>
+<ul>
+  <li>Data Science</li>
+  <li>Machine Learning</li>
+  <li>Artificial Intelligence</li>
+  <li>Scientific Computing</li>
+</ul>
+
+<hr>
+
+<h2>Conclusion</h2>
+<p>
+NumPy is the foundation for scientific computing in Python.
+It is easy to use, fast, and powerful for handling numerical data.
+</p>
 
