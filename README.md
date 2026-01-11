@@ -1523,3 +1523,140 @@ NumPy is the foundation for scientific computing in Python.
 It is easy to use, fast, and powerful for handling numerical data.
 </p>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pandas – Definitions & Examples</title>
+</head>
+<body>
+
+<h1>Pandas Library (Python)</h1>
+
+<h2>1. Pandas</h2>
+<p><b>Definition:</b> Pandas is a Python library used for data manipulation and analysis.</p>
+
+<h2>2. Import Pandas</h2>
+<pre>
+import pandas as pd
+</pre>
+
+<h2>3. Series</h2>
+<p><b>Definition:</b> A Series is a one-dimensional labeled array.</p>
+<pre>
+s = pd.Series([10, 20, 30, 40])
+print(s)
+</pre>
+
+<h2>4. DataFrame</h2>
+<p><b>Definition:</b> A DataFrame is a two-dimensional table with rows and columns.</p>
+<pre>
+data = {
+    "Name": ["A", "B", "C"],
+    "Age": [20, 21, 22]
+}
+df = pd.DataFrame(data)
+print(df)
+</pre>
+
+<h2>5. Read CSV File</h2>
+<p><b>Definition:</b> Used to read data from a CSV file.</p>
+<pre>
+df = pd.read_csv("data.csv")
+print(df)
+</pre>
+
+<h2>6. Head()</h2>
+<p><b>Definition:</b> Displays the first 5 rows of the DataFrame.</p>
+<pre>
+print(df.head())
+</pre>
+
+<h2>7. Tail()</h2>
+<p><b>Definition:</b> Displays the last 5 rows of the DataFrame.</p>
+<pre>
+print(df.tail())
+</pre>
+
+<h2>8. Shape</h2>
+<p><b>Definition:</b> Returns number of rows and columns.</p>
+<pre>
+print(df.shape)
+</pre>
+
+<h2>9. Columns</h2>
+<p><b>Definition:</b> Returns column names.</p>
+<pre>
+print(df.columns)
+</pre>
+
+<h2>10. Info()</h2>
+<p><b>Definition:</b> Gives summary of DataFrame.</p>
+<pre>
+print(df.info())
+</pre>
+
+<h2>11. Describe()</h2>
+<p><b>Definition:</b> Provides statistical summary.</p>
+<pre>
+print(df.describe())
+</pre>
+
+<h2>12. Selecting Column</h2>
+<p><b>Definition:</b> Used to access a single column.</p>
+<pre>
+print(df["Age"])
+</pre>
+
+<h2>13. Selecting Multiple Columns</h2>
+<p><b>Definition:</b> Used to access multiple columns.</p>
+<pre>
+print(df[["Name", "Age"]])
+</pre>
+
+<h2>14. iloc[]</h2>
+<p><b>Definition:</b> Used for integer-based indexing.</p>
+<pre>
+print(df.iloc[0])
+</pre>
+
+<h2>15. loc[]</h2>
+<p><b>Definition:</b> Used for label-based indexing.</p>
+<pre>
+print(df.loc[0])
+</pre>
+
+<h2>16. Adding Column</h2>
+<p><b>Definition:</b> Used to add a new column.</p>
+<pre>
+df["Marks"] = [80, 85, 90]
+print(df)
+</pre>
+
+<h2>17. Dropping Column</h2>
+<p><b>Definition:</b> Used to remove a column.</p>
+<pre>
+df.drop("Marks", axis=1, inplace=True)
+print(df)
+</pre>
+
+<h2>18. Handling Missing Values</h2>
+<p><b>Definition:</b> Used to handle NaN values.</p>
+<pre>
+print(df.isnull())
+</pre>
+
+<h2>19. Fill Missing Values</h2>
+<p><b>Definition:</b> Replaces NaN with given value.</p>
+<pre>
+df.fillna(0, inplace=True)
+</pre>
+
+<h2>20. Drop Missing Values</h2>
+<p><b>Definition:</b> Removes rows with NaN values.</p>
+<pre>
+df.dropna(inplace=True)
+</pre>
+
+</body>
+</html>
