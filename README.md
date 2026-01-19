@@ -1660,3 +1660,123 @@ df.dropna(inplace=True)
 
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Matplotlib – Definitions and Examples</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+h1, h2, h3 {
+    color: #2c3e50;
+}
+pre {
+    background: #f4f4f4;
+    padding: 12px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+code {
+    color: #c7254e;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Matplotlib</h1>
+
+<h2>Definition</h2>
+<p>
+<b>Matplotlib</b> is a Python library used for data visualization.  
+It helps to create graphs such as line plots, bar charts, scatter plots, and histograms.
+</p>
+
+<h2>Importing Matplotlib</h2>
+
+<h3>Definition</h3>
+<p>
+<code>matplotlib.pyplot</code> is a module that provides functions to plot graphs easily.
+</p>
+
+<h3>Example</h3>
+<pre><code>import matplotlib.pyplot as plt</code></pre>
+
+<h2>Line Plot</h2>
+
+<h3>Definition</h3>
+<p>
+A <b>line plot</b> shows the relationship between two variables using a continuous line.
+</p>
+
+<h3>Example</h3>
+<pre><code>
+x = [1, 2, 3, 4, 5]
+y = [2, 4, 6, 8, 10]
+
+plt.plot(x, y)
+plt.xlabel("X Axis")
+plt.ylabel("Y Axis")
+plt.title("Line Plot Example")
+plt.show()
+</code></pre>
+
+<h2>Bar Graph</h2>
+
+<h3>Definition</h3>
+<p>
+A <b>bar graph</b> represents data using rectangular bars where height shows value.
+</p>
+
+<h3>Example</h3>
+<pre><code>
+x = ['A', 'B', 'C', 'D']
+y = [10, 5, 7, 3]
+
+plt.bar(x, y)
+plt.title("Bar Graph Example")
+plt.show()
+</code></pre>
+
+<h2>Scatter Plot</h2>
+
+<h3>Definition</h3>
+<p>
+A <b>scatter plot</b> displays data points as dots to show distribution.
+</p>
+
+<h3>Example</h3>
+<pre><code>
+x = [1, 2, 3, 4, 5]
+y = [5, 4, 3, 2, 1]
+
+plt.scatter(x, y)
+plt.title("Scatter Plot Example")
+plt.show()
+</code></pre>
+
+<h2>Histogram</h2>
+
+<h3>Definition</h3>
+<p>
+A <b>histogram</b> shows frequency distribution of data.
+</p>
+
+<h3>Example</h3>
+<pre><code>
+data = [1, 2, 2, 3, 3, 3, 4, 4, 5]
+
+plt.hist(data)
+plt.title("Histogram Example")
+plt.show()
+</code></pre>
+
+</body>
+</html>
