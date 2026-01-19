@@ -1661,36 +1661,6 @@ df.dropna(inplace=True)
 </body>
 </html>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Matplotlib – Definitions and Examples</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<style>
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
-}
-h1, h2, h3 {
-    color: #2c3e50;
-}
-pre {
-    background: #f4f4f4;
-    padding: 12px;
-    border-radius: 5px;
-    overflow-x: auto;
-}
-code {
-    color: #c7254e;
-}
-</style>
-</head>
-
-<body>
-
 <h1>Matplotlib</h1>
 
 <h2>Definition</h2>
